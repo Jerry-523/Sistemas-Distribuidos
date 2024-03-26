@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload e Download de Arquivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; /* Centralizar as caixas horizontalmente */
+        }
+
+        .box {
+            width: 75%;
+            padding: 20px;
+            margin-top: 40px; /* Adicionado espaçamento entre as caixas */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Upload de Arquivo</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Download de Arquivo</h2>
+            <form id="downloadForm">
+                <select id="downloadSelect"></select>
+                <button id="downloadButton">Baixar</button>
+            </form>
+        </div>
+    </div>
+
+    <ul id="fileList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
