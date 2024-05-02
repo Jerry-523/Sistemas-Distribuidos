@@ -2,6 +2,37 @@
 
 Este é um exemplo de uma API simples para gestão de reservas de hotel, desenvolvida utilizando o framework FastAPI e banco de dados SQLite3.
 
+### Requisitos Funcionais:
+
+1. **Criar uma Nova Reserva:**
+   - O endpoint `/reservas/` deve permitir a criação de uma nova reserva de hotel.
+   - Os dados da reserva (nome do cliente, email, telefone, tipo de quarto, número do quarto, datas de check-in e check-out e status) devem ser enviados em formato JSON.
+   - Os dados da reserva devem ser armazenados no banco de dados.
+
+2. **Obter Todas as Reservas:**
+   - O endpoint `/reservas/` deve permitir a obtenção de todas as reservas de hotel.
+   - As reservas devem ser retornadas em formato JSON.
+
+### Requisitos Não Funcionais:
+
+1. **Banco de Dados:**
+   - O sistema deve utilizar um banco de dados SQLite3 para armazenar as reservas de hotel.
+   - O banco de dados deve ser criado automaticamente se não existir.
+
+2. **Segurança:**
+   - A API deve garantir a segurança dos dados dos clientes.
+
+
+### Requisitos de Interface:
+
+1. **Endpoint para Criar uma Nova Reserva:**
+   - `POST /reservas/`
+
+2. **Endpoint para Obter Todas as Reservas:**
+   - `GET /reservas/`
+
+Espero que isso ajude!
+
 ## Funcionalidades
 
 - Criar uma nova reserva de hotel.
@@ -78,7 +109,4 @@ Exemplo de resposta:
 }
 ```
 
-## Licença
-
-Este projeto está sob a [Licença MIT](https://opensource.org/licenses/MIT).
 ```
