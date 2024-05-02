@@ -107,6 +107,4 @@ Exemplo de resposta:
     }
   ]
 }
-```
 
-```
